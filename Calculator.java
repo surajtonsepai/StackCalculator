@@ -29,11 +29,9 @@ public class Calculator implements StackCalculator {
 					break;
 			}
 			stack.push(result);		
-		}
-		else if (isDouble(entry)){
+		}else if (isDouble(entry)){
 			stack.push(Double.parseDouble(entry));
-		}
-		else{
+		}else{
 			throw new IllegalArgumentException();
 		}
 	}
@@ -43,8 +41,7 @@ public class Calculator implements StackCalculator {
 		if (stack.size() > 0){
 			double output = stack.peek();
 			return output;
-		}
-		else {
+		}else {
 			throw new EmptyStackException();
 		}
 	}
@@ -54,8 +51,7 @@ public class Calculator implements StackCalculator {
 		if (stack.size() > 0){
 			double output = stack.pop();
 			return output;
-		}
-		else {
+		}else {
 			throw new EmptyStackException();
 		}
 	}
@@ -80,8 +76,7 @@ public class Calculator implements StackCalculator {
 		try{
 			Double.parseDouble(str);
 			return true;
-		}
-		catch(Exception e){
+		}catch(Exception e){
 			return false;
 		}
 	}
