@@ -4,9 +4,7 @@ import java.util.EmptyStackException;
 import java.util.Stack;
 
 public class Calculator implements StackCalculator {
-	private Stack<Double> stack = new Stack<Double>();	
-	public Calculator() {
-	}
+	private Stack<Double> stack = new Stack<Double>();
 	
 	@Override
 	public void enter(String entry) {
