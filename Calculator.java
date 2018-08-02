@@ -31,7 +31,7 @@ public class Calculator implements StackCalculator {
 			stack.push(result);		
 		}else if (isDouble(entry)){
 			stack.push(Double.parseDouble(entry));
-		}else{
+		}else {
 			throw new IllegalArgumentException();
 		}
 	}
@@ -59,7 +59,6 @@ public class Calculator implements StackCalculator {
 	@Override
 	public void clear() {
 		stack.clear();
-
 	}
 	
 	@Override
