@@ -81,7 +81,7 @@ public class Calculator implements StackCalculator {
 			Double.parseDouble(str);
 			return true;
 		}
-		catch( Exception e ){
+		catch(Exception e){
 			return false;
 		}
 	}
