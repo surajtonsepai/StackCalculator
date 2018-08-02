@@ -7,6 +7,7 @@ public class Calculator implements StackCalculator {
 	private Stack<Double> stack = new Stack<Double>();	
 	public Calculator() {
 	}
+	
 	@Override
 	public void enter(String entry) {
 		if (entry.matches("[*-/]") && stack.size() > 1){
@@ -34,6 +35,7 @@ public class Calculator implements StackCalculator {
 			throw new IllegalArgumentException();
 		}
 	}
+	
 	@Override
 	public double peek() {
 		if (stack.size() > 0){
@@ -44,6 +46,7 @@ public class Calculator implements StackCalculator {
 			throw new EmptyStackException();
 		}
 	}
+	
 	@Override
 	public double pop() {
 		if (stack.size() > 0){
@@ -54,21 +57,23 @@ public class Calculator implements StackCalculator {
 			throw new EmptyStackException();
 		}
 	}
+	
 	@Override
 	public void clear() {
 		stack.clear();
 
 	}
+	
 	@Override
 	public boolean isEmpty() {
-		
 		return stack.empty();
 	}
+	
 	@Override
 	public int size() {
-		
 		return stack.size();
 	}
+	
 	public boolean isDouble( String str ){
 		try{
 			Double.parseDouble(str);
