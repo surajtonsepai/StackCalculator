@@ -1,7 +1,6 @@
 package edu.metrostate.ics240.STP059.p3.calc;
 
 public interface StackCalculator {
-
 	/**
 	 * Processes an entry to the calculator. If a double value, the entry is
 	 * pushed onto the stack. If an operator (+, -, /,or *), the operands are
@@ -12,7 +11,6 @@ public interface StackCalculator {
 	 * 
 	 */
 	void enter(String entry);
-
 	/**
 	 * Looks at the number at the top of this stack without removing it from the
 	 * stack.
@@ -22,7 +20,6 @@ public interface StackCalculator {
 	 *             - if this stack is empty
 	 */
 	double peek();
-
 	/**
 	 * Removes the number at the top of this stack and returns that value.
 	 * 
@@ -31,13 +28,11 @@ public interface StackCalculator {
 	 *             - if this stack is empty
 	 */
 	double pop();
-
 	/**
 	 * Removes all numbers from this stack. The stack will be empty after this
 	 * call returns
 	 */
 	void clear();
-
 	/**
 	 * Tests if the number stack of this calculator is empty
 	 * 
@@ -45,12 +40,10 @@ public interface StackCalculator {
 	 *         otherwise
 	 */
 	boolean isEmpty();
-
 	/**
 	 * Returns the number of values in this calculators number stack.
 	 * 
 	 * @return the number of values in this calculators number stack
 	 */
 	int size();
-
 }
