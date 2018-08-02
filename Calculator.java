@@ -26,7 +26,7 @@ public class Calculator implements StackCalculator {
 					result = operand1 / operand2;
 					break;
 				default:
-						break;
+					break;
 			}
 			stack.push(result);		
 		}
