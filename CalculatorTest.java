@@ -20,7 +20,6 @@ public class CalculatorTest {
 
 	@Test
 	public void testEnter() {
-
 		Towers t = new Towers(numRings);
 
 		assertTrue(t.move(1, 2));
