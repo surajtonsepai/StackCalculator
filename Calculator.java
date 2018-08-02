@@ -79,7 +79,8 @@ public class Calculator implements StackCalculator {
 	public boolean isDouble( String str ){
 		try{
 			Double.parseDouble(str);
-			return true;}
+			return true;
+		}
 		catch( Exception e ){
 			return false;
 		}
