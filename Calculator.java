@@ -13,14 +13,18 @@ public class Calculator implements StackCalculator {
 			double operand1 = stack.pop();
 			double result = 0;
 			switch (entry) {
-				case "+":	result = operand1 + operand2;
-						break;
-				case "-":	result = operand1 - operand2;
-						break;
-				case "*":	result = operand1 * operand2;
-						break;
-				case "/":	result = operand1 / operand2;
-						break;
+				case "+":	
+					result = operand1 + operand2;
+					break;
+				case "-":	
+					result = operand1 - operand2;
+					break;
+				case "*":	
+					result = operand1 * operand2;
+					break;
+				case "/":	
+					result = operand1 / operand2;
+					break;
 				default:
 						break;
 			}
