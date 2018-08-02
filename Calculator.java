@@ -76,7 +76,7 @@ public class Calculator implements StackCalculator {
 		return stack.size();
 	}
 	
-	public boolean isDouble( String str ){
+	public boolean isDouble(String str){
 		try{
 			Double.parseDouble(str);
 			return true;
