@@ -4,16 +4,11 @@ import java.util.EmptyStackException;
 import java.util.Stack;
 
 public class Calculator implements StackCalculator {
-
-	private Stack<Double> stack = new Stack<Double>();
-	
-	
+	private Stack<Double> stack = new Stack<Double>();	
 	public Calculator() {
 	}
-	
 	@Override
 	public void enter(String entry) {
-
 		if (entry.matches("[*-/]") && stack.size() > 1){
 			double operand2 = stack.pop();
 			double operand1 = stack.pop();
@@ -30,18 +25,15 @@ public class Calculator implements StackCalculator {
 				default:
 						break;
 			}
-			
 			stack.push(result);		
 		}
 		else if (isDouble(entry)){
 			stack.push(Double.parseDouble(entry));
 		}
-		
 		else{
 			throw new IllegalArgumentException();
 		}
 	}
-
 	@Override
 	public double peek() {
 		if (stack.size() > 0){
@@ -52,7 +44,6 @@ public class Calculator implements StackCalculator {
 			throw new EmptyStackException();
 		}
 	}
-
 	@Override
 	public double pop() {
 		if (stack.size() > 0){
@@ -63,25 +54,21 @@ public class Calculator implements StackCalculator {
 			throw new EmptyStackException();
 		}
 	}
-
 	@Override
 	public void clear() {
 		stack.clear();
 
 	}
-
 	@Override
 	public boolean isEmpty() {
 		
 		return stack.empty();
 	}
-
 	@Override
 	public int size() {
 		
 		return stack.size();
 	}
-	
 	public boolean isDouble( String str ){
 		try{
 			Double.parseDouble(str);
@@ -90,5 +77,4 @@ public class Calculator implements StackCalculator {
 			return false;
 		}
 	}
-
 }
