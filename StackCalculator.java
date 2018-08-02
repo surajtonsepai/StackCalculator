@@ -11,6 +11,7 @@ public interface StackCalculator {
 	 * 
 	 */
 	void enter(String entry);
+	
 	/**
 	 * Looks at the number at the top of this stack without removing it from the
 	 * stack.
@@ -20,6 +21,7 @@ public interface StackCalculator {
 	 *             - if this stack is empty
 	 */
 	double peek();
+	
 	/**
 	 * Removes the number at the top of this stack and returns that value.
 	 * 
@@ -28,11 +30,13 @@ public interface StackCalculator {
 	 *             - if this stack is empty
 	 */
 	double pop();
+	
 	/**
 	 * Removes all numbers from this stack. The stack will be empty after this
 	 * call returns
 	 */
 	void clear();
+	
 	/**
 	 * Tests if the number stack of this calculator is empty
 	 * 
@@ -40,6 +44,7 @@ public interface StackCalculator {
 	 *         otherwise
 	 */
 	boolean isEmpty();
+	
 	/**
 	 * Returns the number of values in this calculators number stack.
 	 * 
